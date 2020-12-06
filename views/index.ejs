@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+
+<%- include('./partials/header',) %>
+<h1><%= title %> </h1> 
+<h2>Welcome to <%= title %>! Wherever you want to go we will get you there!</h2>
+<p>Let's add add a flight</p>
+<a href="/flights/new">Add New Flight</a>
+
+<p>Your Flights</p>
+<a href="/flights">Flights</a>
+<%- include('./partials/footer',) %>
+</body>
 </html>
