@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Flights</title>
+    <title><%= title %></title>
 </head>
 <body>
     <nav>
-        <img src="/imgages/airplane.png"
+        <img src="https://cdn.pixabay.com/photo/2013/07/12/13/53/aeroplane-147495_960_720.png"
+        <a href ="/flights/new" <%- title === 'Add New Flight' ? 'class="active"' : '' %>>ADD FLIGHT</a> 
+        <a href ="/flights" <%- title === 'Flights' ? 'class ="active"' : ''%>>ALL FLIGHTS</a>
         
     </nav>
 </body>
 </html>
+<h1><%= title %></h1>
