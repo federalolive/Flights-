@@ -7,4 +7,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Fast Flights' });
 });
 
-module.exports = router;
+module.exports = router
