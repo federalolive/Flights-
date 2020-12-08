@@ -4,9 +4,9 @@
 
 <form action="/flights" method="POST">
 <label>Airport:
-    <select name="Airport">
+    <select name="airport">
         <option value="AUS">AUS</option>
-        <option value="DFW" selected>DFW</option>
+        <option value="DFW">DFW</option>
         <option value="DEN">DEN</option>
         <option value="LAX">LAX</option>
         <option value="SFO">SFO</option>
@@ -17,7 +17,7 @@
     </select>
 </label><br>
 <label>Airline:
-    <select name="Airline">
+    <select name="airline">
         <option value="American Airlines">American Airlines</option>
         <option value="Jet Blue Airways">Jet Blue Airways</option>
         <option value="Southwest">Southwest</option>
@@ -45,7 +45,4 @@
 </form>
 
 <%- include('../partials/footer.ejs') %> 
-</body>
-</html>
-
 

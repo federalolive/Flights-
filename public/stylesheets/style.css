@@ -8,6 +8,7 @@ body {
   margin: 0;
   height: 100vh;
   display: grid;
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/13/53/aeroplane-147495_960_720.png');
   grid-template-rows: 50px 1fr;
   grid-template-areas: 
     "nav"
