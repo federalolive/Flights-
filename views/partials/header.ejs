@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Mongoose Flights</title>
+    
 </head>
-<body>
-    <nav>
-       
-        <a href ="/flights/new" <%- title === 'Add New Flight' ? 'class="active"' : '' %>>ADD FLIGHT</a> 
-        <a href ="/flights" <%- title === 'flights' ? 'class ="active"' : ''%>>ALL FLIGHTS</a>
-        
-    </nav>
 </body>
-</html>
-<h1><%= title %></h1>
+<nav>
+    <img src="/images/aeroplane-147495_640.png">
+    <ul>
+        <a href="/">HOME</a>
+        <a href="/flights/new" <%- title === 'Add Flight' ? 'class="active"' : '' %>>ADD FLIGHT</a>
+        <a href="/flights" <%- title === 'All Flights' ? 'class="active"' : '' %>>ALL FLIGHTS</a>
+        <a href="/destinations/new" <%- title === 'Add Destination' ? 'class="active"' : '' %>>ADD DESTINATION</a>
+    </ul>
+</nav>
+<main>
+    <h1><%= title %></h1>

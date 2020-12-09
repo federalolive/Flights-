@@ -9,7 +9,7 @@
     <div>Departure: </div>
     <div><%= flight.departs %></div>
     <div>Destination: </div><br>
-      <%- flight.destinations.map(d => 
+      <%- flight.destination.map((d) => 
         `${d.destination}`
       ) %>
     <form id="add-destination-to-airport" action="/flights/<%= flight._id %>/destinations" method="POST">
@@ -25,12 +25,11 @@
 <form id="add-ticket-form" method="POST"
   action="/flights/<%= flight._id %>/tickets">
   <label>Seat:</label>
-  <input name="seat" required pattern="[A-F][1-50]\d?" oninput="this.value = this.value.toUpperCase()" placeholder="A1 - F99" maxlength="3">
+  <input name="seat" required pattern="[A-F][1-9]\d?" oninput="this.value = this.value.toUpperCase()" placeholder="A1 - F99" maxlength="3">
   <label>Price:</label>
   <input type="text" name='price' placeholder="$...">
   <input type="submit" value="Add Ticket" class='submitBtn'>
 </form>
-
 <% if (flight.tickets.length) { %>
     <table>
       <thead>
@@ -59,4 +58,3 @@
     <h5>No Tickets Yet</h5>
   <% } %>
 <%- include('../partials/footer') %> 
-
